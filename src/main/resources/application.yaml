@@ -1,0 +1,15 @@
+spring:
+  main:
+    web-application-type: none
+  application:
+    name: ai-helper
+  ai:
+    mistralai:
+      api-key: ${MISTRAL_API_KEY}
+      chat:
+        options:
+          model: mistral-large-latest
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:/mcp-servers.config
